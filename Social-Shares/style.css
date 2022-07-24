@@ -1,0 +1,106 @@
+body {
+    box-sizing: border-box;
+}
+
+.share {
+    width: 200px;
+    margin: 50px auto;
+    border: 1px solid #eee;
+}
+
+.top {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.bottom a {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.bottom a:hover {
+    color: black;
+    background-color: #eee;
+}
+
+.content ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content ul li {
+    width: 99px;
+    border-bottom: 1px solid #eee;
+    height: 99px
+}
+
+.content ul li:nth-of-type(even) {
+    border-left: 1px solid #eee;
+}
+
+.content ul li * {
+    transition: color 0.2s linear, background-color 0.2s linear;
+  }
+
+.content ul li a {
+    width: 79px;
+    height: 79px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.content ul li i {
+    font-size: 25px;
+}
+
+.content ul li span {
+    font-size: 10px;
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.content ul li.twitter i {
+    color: #19cbe6;
+  }
+  .content ul li.facebook i {
+    color: #606ee2;
+  }
+  .content ul li.google i {
+    color: #ff4a5e;
+  }
+  .content ul li.mail i {
+    color: #ffc034;
+  }
+  .content ul li.twitter:hover a {
+    background-color: #19cbe6;
+  }
+  .content ul li.facebook:hover a {
+    background-color: #606ee2;
+  }
+  .content ul li.google:hover a {
+    background-color: #ff4a5e;
+  }
+  .content ul li.mail:hover a {
+    background-color: #ffc034;
+  }
+  .content ul li a:hover i,
+  .content ul li a:hover span {
+    color: white;
+  }
