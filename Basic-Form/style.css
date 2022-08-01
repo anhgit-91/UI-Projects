@@ -1,0 +1,142 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4;
+    background: linear-gradient(to right top, #ff70a2, #ffc871 , #ffffff);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.signUp {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 5.5rem 3.5rem;
+    margin: 180px auto;
+}
+
+.signUp__title h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.signUp__title p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.signUp__link {
+    color: #4796FF;
+    font-size: inherit;
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+}
+
+.form__group--2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1px solid #eee;
+    background-color: #eee;
+    width: 100%;
+}
+
+.form__input:focus {
+    border: 1px solid #eee;
+    background-color: white;
+}
+
+.form__group--2 > .form__input {
+    width: calc(50% - 3px);
+}
+
+.form__group--2 > .form__input:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form__group--2 > .form__input:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form__input::-moz-placeholder,
+.form__input::-webkit-input-placeholder,
+.form__input::-ms-input-placeholder{
+    color: rgb(117, 114, 114);
+    font-style: italic;
+}
+/*
+ cross browser way 
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari 
+    color: pink;
+  }
+  textarea::-moz-placeholder { /* Firefox 19+ 
+    color: pink;
+  }
+  textarea:-ms-input-placeholder { /* IE 10+ 
+    color: pink;
+  }
+  textarea:-moz-placeholder { /* Firefox 18- 
+    color: pink;
+  }
+*/
+
+.form__submit {
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    color: white;
+    background-color: #4796FF;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__submit-text {
+    margin: 0 auto;
+}
+
+.form__tos {
+    font-size: 1.4em;
+    color: rgb(117, 114, 114);
+}
+
+.signUp__tos {
+    text-decoration: none;
+}
